@@ -15,7 +15,8 @@ Vue.use(VueCompositionAPI)
 var firebaseConfig = {
   apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
   authDomain: process.env.VUE_APP_FIREBASE_PROJECT_ID + ".firebaseapp.com",
-  databaseURL: "https://" + process.env.VUE_APP_FIREBASE_PROJECT_ID + ".firebaseio.com",
+  //databaseURL: "https://" + process.env.VUE_APP_FIREBASE_PROJECT_ID + ".firebaseio.com",
+  databaseURL: "https://console.firebase.google.com/u/0/project/geoguess-master-avs/database/geoguess-master-avs-default-rtdb/data",
   projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
   storageBucket: process.env.VUE_APP_FIREBASE_PROJECT_ID + ".appspot.com",
   messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
@@ -31,3 +32,4 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
